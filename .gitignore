@@ -1,0 +1,16 @@
+build
+build/*
+
+.kas_shell_history
+.vscode
+
+layers/*
+
+!layers/meta-training/
+!layers/meta-training/*/
+!layers/meta-training/*/*/
+!layers/meta-training/*/*/*/
+!layers/meta-training/*/*/*/*/
+!layers/meta-training/*/*/*/*/*/
+!layers/meta-training/*/*/*/*/*/*/
+
