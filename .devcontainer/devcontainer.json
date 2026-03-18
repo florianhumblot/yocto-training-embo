@@ -13,7 +13,15 @@
                 "mads-hartmann.bash-ide-vscode",
                 "ms-python.python",
                 "Swellaby.workspace-config-plus"
-            ]
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "terminal.integrated.profiles.linux": {
+                    "bash": {
+                        "path": "/bin/bash"
+                    }
+                }
+            }
         }
     }
 }
