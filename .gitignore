@@ -3,6 +3,7 @@ build/*
 
 .kas_shell_history
 .vscode
+!.vscode/settings.shared.json
 
 layers/*
 

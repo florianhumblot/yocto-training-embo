@@ -1,0 +1,25 @@
+{
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/sources/poky/bitbake/lib",
+        "${workspaceFolder}/sources/poky/meta/lib",
+        "${workspaceFolder}/layers/openembedded-core//poky/bitbake/lib",
+        "${workspaceFolder}/layers/openembedded-core/poky/meta/lib",
+        "${workspaceFolder}/layers/openembedded-core/bitbake/lib",
+        "${workspaceFolder}/layers/openembedded-core/meta/lib"
+    ],
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/sources/poky/bitbake/lib",
+        "${workspaceFolder}/sources/poky/meta/lib",
+        "${workspaceFolder}/layers/openembedded-core//poky/bitbake/lib",
+        "${workspaceFolder}/layers/openembedded-core/poky/meta/lib",
+        "${workspaceFolder}/layers/openembedded-core/bitbake/lib",
+        "${workspaceFolder}/layers/openembedded-core/meta/lib"
+    ],
+    "files.associations": {
+        "flake.lock": "json",
+        "*.conf": "bitbake",
+        "*.inc": "bitbake"
+    },
+    "bitbake.pathToBitbakeFolder": "${workspaceFolder}/layers/openembedded-core/bitbake",
+    "bitbake.commandWrapper": "kas shell config/avenger96.yml -c"
+}
