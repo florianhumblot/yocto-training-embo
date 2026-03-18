@@ -10,6 +10,8 @@ defaults:
     branch: scarthgap
 
 repos:
+  meta-my-cool-layer:
+    path: "layers/meta-my-cool-layer"
   meta-training:
     path: "layers/meta-training"
     layers:

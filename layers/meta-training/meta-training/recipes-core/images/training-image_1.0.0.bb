@@ -10,6 +10,7 @@ IMAGE_INSTALL = "packagegroup-core-boot ${CORE_IMAGE_EXTRA_INSTALL}"
 IMAGE_INSTALL:append = " \
     openssh \
     vim \
+    hello-world-c \
 "
 
 IMAGE_INSTALL:remove = " \

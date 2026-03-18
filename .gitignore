@@ -7,6 +7,7 @@ build/*
 
 layers/*
 
+!layers/meta-my-cool-layer
 !layers/meta-training/
 !layers/meta-training/*/
 !layers/meta-training/*/*/
