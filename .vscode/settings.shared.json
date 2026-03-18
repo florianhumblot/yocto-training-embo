@@ -20,6 +20,30 @@
         "*.conf": "bitbake",
         "*.inc": "bitbake"
     },
+    "files.watcherExclude": {
+        "**/build": true
+    },
+    "search.exclude": {
+        "**/build": true
+    },
+    "C_Cpp.files.exclude": {
+        "**/build": true
+    },
+    "python.analysis.exclude": [
+        "**/build"
+    ],
+    "git.repositoryScanIgnoredFolders": [
+        "**/build"
+    ],
     "bitbake.pathToBitbakeFolder": "${workspaceFolder}/layers/openembedded-core/bitbake",
-    "bitbake.commandWrapper": "kas shell config/emu.yml:config/debug.yml -c"
+    "bitbake.buildConfigurations": [
+        {
+            "name": "qemu",
+            "commandWrapper": "kas shell config/emu.yml:config/debug.yml -c"
+        },
+        {
+            "name": "avenger96",
+            "commandWrapper": "kas shell config/avenger96.yml:config/debug.yml -c"
+        }
+    ]
 }
