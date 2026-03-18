@@ -4,6 +4,19 @@
         "context": "..",
         "dockerfile": "../Dockerfile"
     },
+    "mounts": [
+        // Allow X11 graphics to get forwarded from the container to WSL
+        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind",
+        // Allow qemu to use TUN
+        "source=/dev/net/tun,target=/dev/net/tun,type=bind"
+    ],
+    "containerEnv": {
+        "DISPLAY": ":0"
+    },
+    "capAdd": [
+        // Required for qemu
+        "NET_ADMIN"
+    ],
     "workspaceMount": "source=${localWorkspaceFolder},target=/work,type=bind",
     "workspaceFolder": "/work",
     "customizations": {

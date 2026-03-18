@@ -21,5 +21,5 @@
         "*.inc": "bitbake"
     },
     "bitbake.pathToBitbakeFolder": "${workspaceFolder}/layers/openembedded-core/bitbake",
-    "bitbake.commandWrapper": "kas shell config/avenger96.yml -c"
+    "bitbake.commandWrapper": "kas shell config/emu.yml:config/debug.yml -c"
 }
