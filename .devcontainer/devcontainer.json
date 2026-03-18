@@ -1,0 +1,19 @@
+{
+    "name": "Yocto KAS",
+    "build": {
+        "context": "..",
+        "dockerfile": "../Dockerfile"
+    },
+    "workspaceMount": "source=${localWorkspaceFolder},target=/work,type=bind",
+    "workspaceFolder": "/work",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "yocto-project.yocto-bitbake",
+                "mads-hartmann.bash-ide-vscode",
+                "ms-python.python",
+                "Swellaby.workspace-config-plus"
+            ]
+        }
+    }
+}
